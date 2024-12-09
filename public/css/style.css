@@ -1,0 +1,134 @@
+
+
+/* Home Page CSS */
+#homeBody {
+    background-color: #3c5dad;
+}
+
+#homeHeader {
+    color:antiquewhite;
+    justify-content: center;
+    display: grid;
+    padding-top: 2rem;
+    font-size: 4rem;
+}
+
+#homeButton {
+    background-color: antiquewhite;
+    color:black;
+    border: #3c5dad;
+    border-radius: 0.15rem;
+    height: 3rem;
+    width: 15rem;
+    margin-right:2rem;
+    box-shadow: 10rem;
+    font-size: 1rem;
+}
+
+#buttonContainer {
+    justify-content: center;
+    display: flex;
+
+}
+
+#crest {
+    justify-content: center;
+    display: flex;
+    padding-left:20rem;
+    height: 30rem;
+}
+
+#homeLinks {
+    color: black;
+}
+
+#homeLinks:visited {
+    color: purple;
+    text-decoration: underline;
+}
+
+.imgLink {
+    text-decoration: none;
+}
+
+/* pastCrimeReports, createNewList, viewSuspectList pages CSS */
+.formButtons{
+    background-color: #3c5dad;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+#redirectedPagesButton{
+    background-color: #3c5dad;
+    color:white;
+    border: antiquewhite;
+    border-radius: 0.5rem;
+    height: 1.5rem;
+    margin-right:2rem;
+}
+
+#redirectedPagesLink{
+    color: white
+}
+
+#redirectedPagesBody{
+    background-color:antiquewhite;
+}
+
+.redirectedPagesBody{
+    background-color:antiquewhite;
+}
+
+.redirectedPagesText{
+    color:#3c5dad;
+}
+
+#seal {
+    height:4rem;
+    padding-right:1rem;
+}
+
+#resultsContainer{
+    border-color: #3c5dad;
+    border-style: double;
+    border-width: 0.75rem;
+    padding-left: 3rem;
+    margin-bottom: 1rem;
+}
+
+.suspect-table{
+    border-color: #3c5dad;
+    border-style: double;
+    border-width: 0.4rem;
+    border-collapse: collapse;
+}
+
+.suspect-table td {
+    border: 3px solid #3c5dad;   
+    padding: 8px;             
+    text-align: left;         
+}
+
+.suspect-image {
+    width: 175px;
+    height: 175px;
+}
+
+
+
+
+h3 {
+    padding-left: 5rem;
+    margin: 0rem;
+}
+
+select {
+    width:10rem;
+}
+.noSuspects {
+    padding-left: 7rem;
+    font-size: 2rem;
+    margin: 0rem;
+    font-style: italic;
+    
+}

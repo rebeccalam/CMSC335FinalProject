@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Suspect List</title>
+</head>
+
+<body id="redirectedPagesBody">
+    <h1 class="redirectedPagesText">
+        <a class="imgLink" href="/">
+            <img id="seal" src="./images/FBISeal.png">
+        </a>
+        Create New Suspect List
+    </h1>
+    <form action="http://localhost:5001/viewSuspectList" method="post">
+        <fieldset class="redirectedPagesText">
+            <legend>
+                <strong>Perpetrator Description</strong>
+            </legend>
+            <div>
+                <label class="redirectedPagesText">Sex:
+                    <select name="sex" required>
+                        <option value="" selected hidden>Select a sex</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </label>
+                <br><br>
+                <label class="redirectedPagesText">Race:
+                    <select name="race" required>
+                        <option value="" selected hidden>Select race</option>
+                        <option>Asian</option>
+                        <option>Black</option>
+                        <option>Hispanic</option>
+                        <option>Native</option>
+                        <option>White</option>
+                    </select>
+                </label>
+                <br><br>
+                <label class="redirectedPagesText">Hair Color:
+                    <select name="hairColor">
+                        <option value="" selected hidden>Select hair color</option>
+                        <option>Black</option>
+                        <option>Brown</option>
+                        <option>Blond</option>
+                        <option>Gray</option>
+                        <option>Bald</option>
+                    </select>
+                </label>
+                <br><br>
+            </div>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset class="redirectedPagesText">
+            <legend>
+                <strong>Age Range</strong>
+            </legend>
+            <label class="redirectedPagesText">Minimum Possible Age:
+                <input id="minAge" name="minAge" type="number" min="18" max="100" step="1" value="0">
+            </label>
+            <br>
+            <br>
+            <label class="redirectedPagesText">Maxiumum Possible Age:
+                <input id="maxAge" name="maxAge" type="number" min="18" max="100" step="1" value="0">
+            </label>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset class="redirectedPagesText">
+            <legend>
+                <strong>Height Range</strong>
+            </legend>
+            <label class="redirectedPagesText">Minimum Possible Height (inches):
+                <input id="minHeight" name="minHeight" type="number" min="36" max="96" step="1" value="0">
+            </label>
+            <br>
+            <br>
+            <label class="redirectedPagesText">Maxiumum Possible Height (inches):
+                <input id="maxHeight" name="maxHeight" type="number" min="36" max="96" step="1" value="0">
+            </label>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset class="redirectedPagesText">
+            <legend>
+                <strong>Weight Range</strong>
+            </legend>
+            <label class="redirectedPagesText">Minimum Possible Weight (lbs):
+                <input id="minW" name="minW" type="number" min="40" max="400" step="1" value="0">
+            </label>
+            <br>
+            <br>
+            <label class="redirectedPagesText">Maxiumum Possible Weight (lbs):
+                <input id="maxW" name="maxW" type="number" min="40" max="400" step="1" value="0">
+            </label>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset class="redirectedPagesText">
+            <legend>
+                <strong>Additional Suspect Information</strong>
+            </legend>
+            <label>
+                <textarea rows="5" cols="80" name="additionalInfo"></textarea>
+            </label>
+        </fieldset>
+        <br>
+        <br>
+        <input class="formButtons" type="reset" value="Clear Form" />
+        <input class="formButtons" type="submit" value="Generate Suspects" />
+    </form>
+    <br>
+    <span class="redirectedPagesText">If there is an existing suspect list for the crime you are working on, instead
+        look up the exisiting crime report here:</span>
+    <button id="redirectedPagesButton">
+        <a id="redirectedPagesLink" href="/pastCrimeReports">Access Past Crime Reports</a>
+    </button>
+    <br>
+    <br>
+</body>
+
+</html>

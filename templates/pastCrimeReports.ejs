@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="./css/style.css" type="text/css">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Past Crime Reports</title>
+	<script>src = "index.js" </script>
+</head>
+
+<body id="redireCannot GET /viewSuspectListctedPagesBody" class="redirectedPagesBody">
+	<h1 class="redirectedPagesText">
+		<a href="/" class="imgLink">
+			<img id="seal" src="./images/FBISeal.png">
+		</a>
+		Past Crime Reports
+	</h1>
+	<form action="http://localhost:5001/pastCrimeReportsList" method="post">
+		<fieldset class="redirectedPagesText">
+			<legend>
+				<strong>Search All Past Crime Reports</strong>
+			</legend>
+			<label class="redirectedPagesText">Enter Crime Report ID:
+				<input type="text" name="crimeId" id="crimeId" required />
+			</label>
+		</fieldset>
+		<br>
+		<input class="formButtons" type="reset" value="Clear ID" />
+		<input class="formButtons" type="submit" value="Search Existing Reports" />
+	</form><br>
+	<form action="http://localhost:5001/pastCrimeReports" method="post">
+		<input class="formButtons" type="submit" value="Clear All Existing Reports" />
+	</form>
+	<br>
+	<span class="redirectedPagesText">If there is no existing suspect list for the crime you are working on, instead
+		create a new suspect list here:</span>
+	<button id="redirectedPagesButton">
+		<a id="redirectedPagesLink" href="/createNewList">Create New Suspect List</a>
+	</button>
+</body>
+
+</html>

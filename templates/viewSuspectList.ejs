@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="./css/style.css" type="text/css">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Suspect List</title>
+</head>
+
+<body id="redirectedPagesBody">
+	<h1 class="redirectedPagesText">
+		<a class="imgLink" href="/">
+			<img id="seal" src="./images/FBISeal.png">
+		</a>
+		Generated Suspect List
+	</h1>
+	<h3>
+		<em>This suspect report has a crime id of <strong><%- crimeId %>.</strong></em>
+	</h3>
+	<br>
+	<%- suspectCards %>
+
+		<button id="redirectedPagesButton">
+			<a id="redirectedPagesLink" href="/">Back to Home</a>
+		</button>
+</body>
+
+</html>
